@@ -2,4 +2,4 @@ From tutorial https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-
 
 http://timmyreilly.azurewebsites.net/starter-site-for-flask-on-azure-web-apps/
 
-Store your keys in your config.py file located in the root
+Store your keys in your config.py file located in the root and then add the config.py to the .gitignore file
