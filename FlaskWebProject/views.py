@@ -33,6 +33,8 @@ def login():
 @app.route('/user', methods=['GET', 'POST'])
 def user():
     form1 = User()
+    if form1.validate_on_submit():
+        return redirect('/home')
     return render_template('user.html', 
                            title='User Info',
                            form=form1)
