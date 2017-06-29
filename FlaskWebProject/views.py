@@ -5,7 +5,7 @@ Routes and views for the flask application.
 from datetime import datetime
 from flask import render_template, flash, redirect
 from FlaskWebProject import app
-from .forms import LoginForm
+from .forms import LoginForm, User
 
 @app.route('/')
 @app.route('/home')
@@ -28,3 +28,11 @@ def login():
     return render_template('login.html', 
                            title='Sign In',
                            form=form)
+
+
+@app.route('/user', methods=['GET', 'POST'])
+def user():
+    form1 = User()
+    return render_template('user.html', 
+                           title='User Info',
+                           form=form1)
