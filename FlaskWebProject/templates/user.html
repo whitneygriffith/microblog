@@ -4,7 +4,8 @@
 <form action="" method="post" name="user">
     {{ form.hidden_tag() }}
     <p>
-        Please enter your Username:<br> {{ form.user_id(size=80) }}<br>
+        Please enter your Username:<br> {{ form.user_id(size=80) }}<br> {% for error in form.user_id.errors %}
+        <span style="color: red;">[{{ error }}]</span> {% endfor %}
     </p>
     <p><input type="submit" value="Submit User"></p>
 </form>
