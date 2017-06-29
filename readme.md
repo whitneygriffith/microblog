@@ -1,3 +1,5 @@
-This is miminum code required for an Azure Flask project deployment. 
+From tutorial https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
 
-Check out my [blog post](http://timmyreilly.azurewebsites.net/starter-site-for-flask-on-azure-web-apps/) if you have any other questions. 
+http://timmyreilly.azurewebsites.net/starter-site-for-flask-on-azure-web-apps/
+
+Store your keys in your config.py file located in the root
