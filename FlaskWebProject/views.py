@@ -12,7 +12,7 @@ from .forms import LoginForm
 def home():
     """Renders the home page."""
     return render_template(
-        'index.html',
+        'home.html',
         title='Home Page',
         year=datetime.now().year,
     )
