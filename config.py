@@ -10,6 +10,8 @@ SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://admin1234@microblog:@Qwerty123
 basedir = os.path.abspath(os.path.dirname(__file__))
 SQLALCHEMY_MIGRATE_REPO = os.path.join(basedir, 'db_repository')
 
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+
 '''
 Database admin login
 u: admin1234
