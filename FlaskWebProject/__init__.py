@@ -10,4 +10,4 @@ app = Flask(__name__)
 app.config.from_object('config')
 db = SQLAlchemy(app)
 
-import FlaskWebProject.views, FlaskWebProject.models
+import FlaskWebProject.views
